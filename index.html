@@ -1,0 +1,277 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-white text-gray-900">
+    <!-- Static Header -->
+    <header class="sticky top-0 bg-white shadow-md py-4 w-full">
+        <nav class="container mx-auto flex justify-between items-center px-4 lg:px-8">
+            <div class="text-lg font-bold">Portfolio</div>
+            <ul class="flex space-x-6">
+                <li><a href="index.html" class="hover:text-gray-700">Home</a></li>
+                <li><a href="about.html" class="hover:text-gray-700">About</a></li>
+                <li><a href="contact.html" class="hover:text-gray-700">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    
+    <!-- Home Section -->
+    <section id="home" class="py-16 px-4 md:px-8 max-w-7xl mx-auto border-b border-black text-center">
+        <h1 class="text-4xl md:text-6xl font-extrabold leading-tight">
+            Design. Innovate. Optimize. Repeat.
+        </h1>
+        <p class="text-xl md:text-2xl mt-6">
+            Sonune Gayatri Ajay - Electronics and Telecommunication Engineer
+        </p>
+        <div class="flex justify-center mt-8 space-x-6">
+            <a href="mailto:gayatri.sonune@mitaoe.ac.in" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Email">
+            </a>
+        
+            <a href="https://www.linkedin.com/in/gayatri-sonune-22a7a2281?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=ios_app" target="_blank">
+                <img src="https://img.icons8.com/color/48/000000/linkedin.png" alt="LinkedIn">
+            </a>
+        </div>
+        
+        <!-- More Information Link -->
+        <div class="mt-6">
+            <a href="about.html" class="text-sm text-gray-500 hover:text-blue-600 hover:underline transition duration-300">
+                More Information
+            </a>
+        </div>
+    </section>
+    
+
+    <!-- Skills Section -->
+<!-- Skills Section -->
+<section id="skills" class="py-16 max-w-7xl mx-auto border-b border-black">
+    <h2 class="text-4xl font-semibold text-center">Skills</h2>
+    <div class="mt-10 grid grid-cols-2 sm:grid-cols-4 gap-8 justify-items-center">
+        <div class="flex flex-col items-center">
+            <img src="https://img.icons8.com/ios/50/000000/sensor.png" alt="Sensor Integration">
+            <p class="mt-2 text-lg">Sensor Integration</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="https://img.icons8.com/ios/50/000000/wifi.png" alt="Blynk Setup">
+            <p class="mt-2 text-lg">Blynk Setup</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="https://img.icons8.com/color/48/000000/python.png" alt="Python">
+            <p class="mt-2 text-lg">Python</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="https://img.icons8.com/ios-filled/50/000000/matlab.png" alt="MATLAB & SIMULINK">
+            <p class="mt-2 text-lg">MATLAB & SIMULINK</p>
+        </div>
+        <div class="flex flex-col items-center">
+            <img src="https://img.icons8.com/color/48/000000/arduino.png" alt="Arduino">
+            <p class="mt-2 text-lg">Programming in Arduino IDE</p>
+        </div>
+        
+    </div>
+</section>
+
+
+
+  <!-- Projects Section -->
+<section id="projects" class="py-16 max-w-7xl mx-auto border-b border-black">
+    <h2 class="text-4xl font-semibold text-center">Projects</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10">
+        <div class="bg-white p-6 py-16 shadow-md flex items-center space-x-4 cursor-pointer hover:scale-102 hover:shadow-lg transition-all duration-200" onclick="toggleProject('fashionAI')">
+            <div>
+                <h3 class="text-xl">Elegance Engine: AI-Based Virtual Fashion Stylist</h3>
+                <div id="fashionAI" class="mt-2 hidden">
+                    <p>AI-powered fashion app offering personalized styling & fashion advice.</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>User profiles & virtual wardrobes</li>
+                        <li>AI-based outfit mix-and-match suggestions</li>
+                        <li>Trend forecasting & AR try-on</li>
+                        <li>Tech Stack: AI, ML, Python, HTML, CSS</li>
+                    </ul>
+            
+                </div>
+            </div>
+        </div>
+        
+
+        <div class="bg-white p-6 py-16 shadow-md flex items-center space-x-4 cursor-pointer hover:scale-102 hover:shadow-lg transition-all duration-200" onclick="toggleProject('plantMonitor')">
+            <div>
+                <h3 class="text-xl">Smart Plant Monitoring System</h3>
+                <div id="plantMonitor" class="mt-2 hidden">
+                    <p>IoT-based system for monitoring plant health.</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Key Skills: Arduino IDE, Sensors, Blynk, WiFi Connectivity</li>
+                        <li>Collects environmental data (temperature & humidity)</li>
+                        <li>Remote monitoring via web-based platform</li>
+                        <li>Alerts users when intervention is needed</li>
+                        <li>Demonstration of Temperature and Humidity data log on BLYNK using ESP8266</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        
+        <div class="bg-white p-6 py-16 shadow-md flex items-center space-x-4 cursor-pointer hover:scale-102 hover:shadow-lg transition-all duration-200" onclick="toggleProject('fireDetection')">
+            <div>
+                <h3 class="text-xl ">Real-Time Fire Detection System</h3>
+                <div id="fireDetection" class="mt-2 hidden">
+                    <p>AI-powered fire detection using OpenCV, Python, and YOLOv8 for real-time flame and smoke identification.</p>
+                    <ul class="list-disc pl-5 mt-2 text-gray-700">
+                        <li>🔥 Uses **YOLOv8** for deep learning-based detection.</li>
+                        <li>📷 **OpenCV** processes video feeds for real-time analysis.</li>
+                        <li>⚡ Instant fire & smoke detection with high accuracy.</li>
+                        <li>🔔 Can be integrated with alert systems for safety automation.</li>
+                    </ul>
+                    <a href="https://github.com/vijaypalsaniyajpr/live-fire-detection" target="_blank" class="text-blue-500 mt-2 block font-medium">🔗 Project Link</a>
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="bg-white p-6 py-16 shadow-md flex items-center space-x-4 cursor-pointer hover:scale-102 hover:shadow-lg transition-all duration-200" onclick="toggleProject('underwaterROV')">
+            <div>
+                <h3 class="text-xl">Underwater ROV: Remote Operated Vehicle</h3>
+                <div id="underwaterROV" class="mt-2 hidden">
+                    <p>Remotely Operated Vehicle (ROV) for underwater exploration and operations.</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Key Skills: Arduino Uno, Sensor Integration, Hydrodynamics</li>
+                        <li>Accesses deep underwater environments</li>
+                        <li>Withstands harsh underwater conditions</li>
+                        <li>Captures high-resolution imagery & gathers scientific data</li>
+                        <li>Performs object manipulation & specialized operations</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+        <div class="bg-white p-6 py-16 shadow-md flex items-center space-x-4 cursor-pointer hover:scale-102 hover:shadow-lg transition-all duration-200" onclick="toggleProject('polytheneCarrier')">
+            <div>
+                <h3 class="text-xl">Polythene Bag Carrier: CAD & 3D Design</h3>
+                <div id="polytheneCarrier" class="mt-2 hidden">
+                    <p>Designed using Fusion 360 for 3D modeling and manufacturing.</p>
+                    <ul class="list-disc pl-5 mt-2">
+                        <li>Key Skills: Fusion 360 (CAD), Slicing</li>
+                        <li>Computer-aided design & manufacturing (CAD/CAM)</li>
+                        <li>3D modeling for shape design & styling</li>
+                        <li>Used in aerospace, automotive, industrial equipment & more</li>
+                        <li>Supports sheet metal, composites & complex surfaces</li>
+                    </ul>
+                    
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+</section>
+
+<script>
+    function toggleProject(id) {
+        const element = document.getElementById(id);
+        element.classList.toggle('hidden');
+    }
+</script>
+
+
+<section id="certificates" class="py-16 max-w-7xl mx-auto border-b border-black">
+    <h2 class="text-4xl font-semibold text-center">Certificates</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 mt-10 text-center">
+        
+        <div>
+    <a href="https://drive.google.com/file/d/1mESGybo2xanfu6XvQx8XdzI0j6w6iYXJ/view?usp=drivesdk" target="_blank" class="block text-center">
+        <img src="nptel.jpg" alt="Cloud Computing" class="mx-auto w-20 h-20">
+        <p class="mt-2 text-lg hover:text-blue-500 hover:underline transition duration-100">Cloud Computing</p>
+    </a>
+</div>
+
+
+        <div>
+            <a href="https://drive.google.com/file/d/1RjIpgqrMISVlRWYltUbwqNaiVI5cp2AT/view?usp=drivesdk" target="_blank" class="block text-center">
+                <img src="greatlearning-brand.svg" alt="MongoDB tutorial" class="mx-auto w-20 h-20">
+            
+            <p class="mt-2 text-lg hover:text-blue-500 hover:underline transition duration-100">MongoDB tutorial</p>
+        </a>
+        </div>
+
+        <div>
+            <a href="https://drive.google.com/file/d/1PRHeugA_nZhGklhNMgMSBYwpjQjDj84p/view?usp=drivesdk" target="_blank" class="block text-center">
+                <img src="greatlearning-brand.svg" alt="Data Visualization using Tableau" class="mx-auto w-20 h-20">
+            
+            <p class="mt-2 text-lg hover:text-blue-500 hover:underline transition duration-100">Data Visualization using Tableau</p>
+        </a>
+        </div>
+
+        
+    </div>
+</section>
+
+
+   <!-- Education Section -->
+<section id="education" class="py-16 max-w-7xl mx-auto border-b border-black">
+    <h2 class="text-4xl font-semibold text-center">Education</h2>
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10 text-center">
+        <div>
+            <img src="cbse-logo-with-name.png" alt="RBSE Logo" class="mx-auto w-20 h-20">
+            <p class="mt-2 text-lg">Secondary Education - CBSE Board</p>
+        </div>
+        <div>
+            <img src="boardlogo.svg" alt="RBSE Logo" class="mx-auto w-20 h-20">
+            <p class="mt-2 text-lg">Senior Secondary Education - MSBSHSE Board</p>
+        </div>
+        <div>
+            <img src="MITAOE-logo.webp" alt="MIT Academy Logo" class="mx-auto w-20 h-20">
+            <p class="mt-2 text-lg">Bachelor's in ENTC - MIT Academy of Engineering</p>
+        </div>
+    </div>
+</section>
+
+
+
+
+
+  <!-- Footer -->
+ <!-- Footer -->
+ <footer id="contact" class="bg-white py-8 border-t text-center mt-auto w-full">
+    <div class="max-w-5xl mx-auto px-4 sm:px-8">
+        <div class="flex flex-wrap justify-center items-center gap-4 text-center">
+            <a href="mailto:gayatri.sonune@mitaoe.ac.in" class="flex items-center text-blue-500 hover:text-blue-700">
+                <img src="https://img.icons8.com/color/48/000000/gmail.png" alt="Email" class="w-6 h-6 mr-2">
+                gayatri.sonune@mitaoe.ac.in
+            </a>
+            <a href="tel:+91-8830924345" class="flex items-center text-blue-500 hover:text-blue-700">
+                <img src="https://img.icons8.com/color/48/000000/phone.png" alt="Phone" class="w-6 h-6 mr-2">
+                +91-8830924345
+            </a>
+            <a href="https://www.google.com/maps?q=Your+Address" target="_blank" class="flex items-center text-blue-500 hover:text-blue-700">
+                <img src="https://img.icons8.com/color/48/000000/place-marker.png" alt="Address" class="w-6 h-6 mr-2">
+                Pune, Maharashtra
+            </a>
+        </div>
+        <p class="mt-6 flex flex-wrap justify-center items-center gap-2 text-sm">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/cc.svg" alt="CC" class="w-6 h-6">
+            <img src="https://mirrors.creativecommons.org/presskit/icons/by.svg" alt="Attribution" class="w-6 h-6">
+            <span>2025 Sonune Gayatri Ajay.</span>
+        </p>
+    </div>
+</footer>
+
+<!-- JavaScript for Mobile Menu -->
+<script>
+    document.getElementById('menu-btn').addEventListener('click', function () {
+        let mobileMenu = document.getElementById('mobile-menu');
+        mobileMenu.classList.toggle('hidden');
+    });
+</script>
+</body>
+</html>
+
+
